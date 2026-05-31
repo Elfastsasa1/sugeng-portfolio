@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
-import Image from "next/image";
+import { RenaissanceParallax } from "@/components/RenaissanceParallax";
 
 export function HeroSection() {
   const statueRef = useRef<HTMLDivElement>(null);
@@ -54,28 +54,14 @@ export function HeroSection() {
         />
       </div>
 
-      {/* Marble Philosopher Bust — Center Piece */}
+      {/* 3D Renaissance Parallax (replaces 2D statue) */}
       <div
         ref={statueRef}
         className="absolute inset-0 flex items-center justify-center will-change-transform"
+        style={{ pointerEvents: "none" }}
       >
         <div className="relative w-[420px] h-[620px] md:w-[600px] md:h-[820px]">
-          <Image
-            src="https://images.unsplash.com/photo-1612212756672-12d7f6d97a87?w=900&q=90&auto=format&fit=crop"
-            alt="Ancient marble philosopher sculpture"
-            fill
-            className="object-cover object-top"
-            style={{
-              maskImage:
-                "radial-gradient(ellipse 80% 90% at 50% 40%, black 30%, transparent 85%)",
-              WebkitMaskImage:
-                "radial-gradient(ellipse 80% 90% at 50% 40%, black 30%, transparent 85%)",
-              filter: "brightness(0.55) contrast(1.2) sepia(0.2)",
-              mixBlendMode: "lighten",
-            }}
-            priority
-            sizes="(max-width: 768px) 420px, 600px"
-          />
+          <RenaissanceParallax />
           {/* Gold tint overlay on statue */}
           <div
             className="absolute inset-0"
@@ -111,7 +97,9 @@ export function HeroSection() {
         >
           Fullstack · AI · Blockchain
         </span>
-        <div className="w-px h-24 bg-gradient-to-b from-transparent via-gold/40 to-transparent" />
+        <div
+          className="w-px h-24 bg-gradient-to-b from-transparent via-gold/40 to-transparent"
+        />
       </motion.div>
 
       {/* Right vertical text */}
@@ -121,7 +109,9 @@ export function HeroSection() {
         animate={{ opacity: 1 }}
         transition={{ delay: 2.4, duration: 1 }}
       >
-        <div className="w-px h-24 bg-gradient-to-b from-transparent via-gold/40 to-transparent" />
+        <div
+          className="w-px h-24 bg-gradient-to-b from-transparent via-gold/40 to-transparent"
+        />
         <span
           className="label-small"
           style={{
@@ -132,7 +122,9 @@ export function HeroSection() {
         >
           Est. MMXXIV · Jakarta
         </span>
-        <div className="w-px h-24 bg-gradient-to-b from-transparent via-gold/40 to-transparent" />
+        <div
+          className="w-px h-24 bg-gradient-to-b from-transparent via-gold/40 to-transparent"
+        />
       </motion.div>
 
       {/* Main Hero Text */}
