@@ -91,13 +91,13 @@ export function HeroSection() {
         className="absolute inset-0 flex items-center justify-center will-change-transform pointer-events-none"
         style={{ x: statueX, y: statueY }}
       >
-        <div className="relative w-[350px] h-[520px] md:w-[500px] md:h-[750px] lg:w-[600px] lg:h-[900px]">
+        <div className="relative w-[350px] h-[520px] md:w-[500px] md:h-[750px] lg:w-[600px] lg:h-[900px] bg-red-500/30">
           <img
             src="/renaissance/hero_statue.jpg"
             alt=""
             className="w-full h-full object-cover object-top"
             style={{
-filter: "brightness(2.0) contrast(1.0) sepia(0) saturate(1.0)",
+              filter: "brightness(2.0) contrast(1.0) sepia(0) saturate(1.0)",
               maskImage: "none",
               WebkitMaskImage: "none",
             }}
