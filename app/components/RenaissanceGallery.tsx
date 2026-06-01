@@ -347,8 +347,8 @@ function RenaissanceFrame({
             className="w-full h-full object-cover transition-all duration-700"
             style={{
               filter: isHovered
-                ? "brightness(0.5) contrast(1.25) sepia(0.25) saturate(0.9)"
-                : "brightness(0.35) contrast(1.3) sepia(0.35) saturate(0.8)",
+                ? "brightness(0.8) contrast(1.15) sepia(0.15) saturate(0.9)"
+                : "brightness(0.65) contrast(1.2) sepia(0.2) saturate(0.85)",
               transform: `scale(${isHovered ? 1.05 : 1})`,
             }}
             loading="lazy"
