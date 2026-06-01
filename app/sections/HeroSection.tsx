@@ -97,7 +97,7 @@ export function HeroSection() {
             alt=""
             className="w-full h-full object-cover object-top"
             style={{
-              filter: "none",
+filter: "brightness(2.0) contrast(1.0) sepia(0) saturate(1.0)",
               maskImage: "none",
               WebkitMaskImage: "none",
             }}
