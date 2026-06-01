@@ -97,9 +97,9 @@ export function HeroSection() {
             alt=""
             className="w-full h-full object-cover object-top"
             style={{
-              filter: "brightness(0.6) contrast(1.2) sepia(0.2) saturate(0.8)",
-              maskImage: "radial-gradient(ellipse 90% 90% at 50% 45%, black 50%, transparent 85%)",
-              WebkitMaskImage: "radial-gradient(ellipse 90% 90% at 50% 45%, black 50%, transparent 85%)",
+              filter: "none",
+              maskImage: "none",
+              WebkitMaskImage: "none",
             }}
           />
           {/* Gold ambient glow around statue */}
