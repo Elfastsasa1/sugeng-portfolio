@@ -15,6 +15,7 @@ import { ProjectsSection } from "@/app/sections/ProjectsSection";
 import { AchievementsSection } from "@/app/sections/AchievementsSection";
 import { FootprintSection } from "@/app/sections/FootprintSection";
 import { FinalSection } from "@/app/sections/FinalSection";
+import { RenaissanceGallery } from "@/app/components/RenaissanceGallery";
 
 export default function Home() {
   const [loaded, setLoaded] = useState(false);
@@ -92,6 +93,7 @@ export default function Home() {
           <ArsenalSection />
           <PhilosophySection />
           <ProjectsSection />
+          <RenaissanceGallery />
           <AchievementsSection />
           <FootprintSection />
           <FinalSection />

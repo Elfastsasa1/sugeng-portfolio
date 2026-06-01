@@ -2,7 +2,6 @@
 
 import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
-import { RenaissanceParallax } from "@/components/RenaissanceParallax";
 
 export function HeroSection() {
   const statueRef = useRef<HTMLDivElement>(null);
@@ -54,20 +53,27 @@ export function HeroSection() {
         />
       </div>
 
-      {/* 3D Renaissance Parallax (replaces 2D statue) */}
+      {/* Renaissance Statue Background */}
       <div
         ref={statueRef}
         className="absolute inset-0 flex items-center justify-center will-change-transform"
         style={{ pointerEvents: "none" }}
       >
         <div className="relative w-[420px] h-[620px] md:w-[600px] md:h-[820px]">
-          <RenaissanceParallax />
+          <img
+            src="/renaissance/full_body.jpg"
+            alt="Renaissance Statue"
+            className="w-full h-full object-contain"
+            style={{
+              filter: "sepia(30%) contrast(1.2) brightness(0.7) opacity(0.4)",
+            }}
+          />
           {/* Gold tint overlay on statue */}
           <div
             className="absolute inset-0"
             style={{
               background:
-                "radial-gradient(ellipse at 50% 40%, rgba(198,167,106,0.08) 0%, transparent 70%)",
+                "radial-gradient(ellipse at 50% 40%, rgba(198,167,106,0.15) 0%, transparent 70%)",
             }}
           />
         </div>
